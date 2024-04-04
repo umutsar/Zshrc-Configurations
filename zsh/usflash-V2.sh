@@ -1,3 +1,7 @@
+# Coded by Umut Sar
+# Brief: Programming stm32 with st-link in terminal environment. (You need to install st-flash requirement) ( Version 2 )
+
+
 function usflash {
     local bin_file=$(find . -maxdepth 1 -type f -name '*.bin' -print -quit)
     
@@ -21,3 +25,12 @@ function _usflash {
 }
 
 compdef _usflash usflash
+
+
+# usage:
+
+# If you are in the project folder;
+# usflash
+
+# If you know project name and you are in any directory; ( You can press tab to preview projects )
+# usflash ProjectName
