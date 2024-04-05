@@ -45,6 +45,15 @@ function usflash {
     fi
 }
 
+function _usflash {
+    _files -W /home/kali/stm32bin/ -/
+}
+
+# Otomatik tamamlama işlevini usflash fonksiyonuna bağlama
+
+compdef _usflash usflash
+
+
 
 # usage:
 
